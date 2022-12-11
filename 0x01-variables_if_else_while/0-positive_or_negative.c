@@ -7,10 +7,7 @@
  */
 int main(void)
 {
-	int n;
-
-	srand(time(0));
-	n _ rand() - RAND_MAX / 2;
+	int n = 5;
 
 	if (n > 0)
 	{
