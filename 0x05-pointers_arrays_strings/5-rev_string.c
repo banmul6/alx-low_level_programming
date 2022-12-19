@@ -6,24 +6,23 @@
  */
 void rev_string(char *s)
 {
-	"sam"->"mas"
-		char tmp;
-	int i, length1, length2;
+	int i, j, k, temp;
 
-	length1 = 0;
-	length2 = 0;
+	i = 0;
+	while (s[i] != '\n')
+	{
+		i++;
+	}
+	k = 0;
+	j = i - 1;
 
-	while (s[length1] != '\n')
-		length1++;
-
-	length2 = length1 - 1;
-		for (i = 0; i < length1; i++)
-		{
-			"samlx"; "xlamas";
-				tmp = s[i];
-			s[i] = s[length2];
-			s[length2] = tmp;
-			length2 -= 1;
-		}
+	while (k < j)
+	{
+		temp = s[k];
+		s[k] = s[j];
+		s[j] = temp;
+		k++;
+		j--;
+	}
 }
 
